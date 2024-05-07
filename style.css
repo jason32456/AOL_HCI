@@ -13,8 +13,8 @@
     width: 100%;
     background: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0c675ac2-d6f2-400e-84ba-1a18003608ac/air-jordan-1-mid-se-shoes-XkFP30.png);
     background-size: cover;
-    background-position: center;
-  }
+    background-position: calc(100% + 200px) center; /* This will shift the background image 200px from the right */
+} 
   
   .nav {
     display: flex;
