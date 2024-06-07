@@ -9,6 +9,13 @@
   box-sizing: border-box;
 }
 
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px;
+  font-size: 200%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -203,7 +210,7 @@ nav ul li a:hover::after {
 }
 
 .testimony{
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,7 +248,8 @@ nav ul li a:hover::after {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #4070F4;
+  /* arround profile pic */
+  background-color: #C9C3B9;
   border-radius: 25px 25px 0 25px;
 }
 .overlay::before,
@@ -252,7 +260,7 @@ nav ul li a:hover::after {
   bottom: -40px;
   height: 40px;
   width: 40px;
-  background-color: #4070F4;
+  background-color: #C9C3B9;
 }
 .overlay::after{
   border-radius: 0 25px 0 0;
@@ -271,7 +279,7 @@ nav ul li a:hover::after {
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #4070F4;
+  border: 4px solid #C9C3B9;
 }
 .name{
   font-size: 18px;
@@ -288,14 +296,15 @@ nav ul li a:hover::after {
   font-size: 16px;
   color: #FFF;
   padding: 8px 16px;
-  background-color: #4070F4;
+  background-color: grey;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button:hover{
-  background: #265DF2;
+  background: black;
+  color: #FFF;
 }
 
 .swiper-navBtn{
@@ -316,11 +325,11 @@ nav ul li a:hover::after {
   left: 0;
 }
 .swiper-pagination-bullet{
-  background-color: #6E93f7;
+  background-color: white;
   opacity: 1;
 }
 .swiper-pagination-bullet-active{
-  background-color: #4070F4;
+  background-color: black;
 }
 
 @media screen and (max-width: 768px) {
@@ -445,7 +454,7 @@ h1 {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 268px;
