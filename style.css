@@ -308,11 +308,11 @@ nav ul li a:hover::after {
 }
 
 .swiper-navBtn{
-  color: #6E93f7;
+  color: black;
   transition: color 0.3s ease;
 }
 .swiper-navBtn:hover{
-  color: #4070F4;
+  color: grey;
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after{
