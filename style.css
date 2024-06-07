@@ -6,6 +6,7 @@
   /* justify-content: center; */
   /* align-items: center; */
   /* height: 100vh; */
+  box-sizing: border-box;
 }
 
 body {
@@ -260,4 +261,76 @@ nav ul li a:hover::after {
 
 .carousel-button.next {
   right: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.product h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #444;
+}
+
+.cart {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cart h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.cart-item span {
+  font-size: 1.1em;
+}
+
+.cart h3 {
+  font-size: 1.2em;
+  margin-top: 20px;
 }

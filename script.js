@@ -26,3 +26,5 @@ document.querySelector('.carousel-button.prev').addEventListener('click', prevIt
 
 // Show the first item initially
 showItem(index);
+
+
