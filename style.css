@@ -214,7 +214,7 @@ nav ul li a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #EFEFEF;
+  background-color: #fff;
 }
 .slide-container{
   max-width: 1120px;
@@ -237,7 +237,7 @@ nav ul li a:hover::after {
 .card {
   background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   overflow: visible;
   text-align: center;
   width: 300px;
@@ -324,7 +324,7 @@ nav ul li a:hover::after {
   left: 0;
 }
 .swiper-pagination-bullet{
-  background-color: white;
+  background-color: grey;
   opacity: 1;
 }
 .swiper-pagination-bullet-active{
