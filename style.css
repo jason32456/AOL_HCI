@@ -12,7 +12,7 @@
   background-color: rgb(214, 207, 199);
 }
 
-.nav img {
+.nav img {  
   width: 80px;
   height: 80px;
 }
@@ -538,4 +538,111 @@ nav ul li a:hover::after {
   color: black;
   background: transparent;
   cursor: pointer;
+}
+
+.cart-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.cart-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.cart-header img {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+.cart-item img {
+  width: 180px;
+  height: auto;
+}
+.cart-item-details {
+  flex: 1;
+  padding-left: 10px;
+}
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.cart-item-quantity button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.cart-item-quantity button:hover {
+  background-color: #333;
+}
+.cart-item-quantity input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+.cart-item-remove {
+  background-color: #d11a2a;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cart-item-remove:hover {
+  background-color: #a3141e;
+}
+.cart-total {
+  text-align: right;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+.checkout-button {
+  display: inline-block;
+  background-color: #C9C3B9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  float: right;
+}
+.checkout-button:hover {
+  background-color: #A29C91;
+}
+.accepted-payments {
+  margin-top: 60px;
+  text-align: center;
+}
+.accepted-payments h2 {
+  margin-bottom: 30px;
+}
+.accepted-payments img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+.accepted-payments img:last-child {
+  margin-right: 0;
+}
+
+#gap {
+  height: 100px;
 }

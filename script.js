@@ -54,3 +54,30 @@ function updateCart() {
 }
 
 //sort
+function changeQuantity(button, delta) {
+  const quantityInput = button.parentElement.querySelector('input');
+  let newQuantity = parseInt(quantityInput.value) + delta;
+  if (newQuantity < 1) newQuantity = 1;
+  quantityInput.value = newQuantity;
+  updateTotal();
+}
+
+function updateTotal() {
+  let total = 0;
+  document.querySelectorAll('.cart-item').forEach(item => {
+      const price = parseFloat(item.querySelector('.cart-item-details p').innerText.replace('Price: $', ''));
+      const quantity = parseInt(item.querySelector('.cart-item-quantity input').value);
+      total += price * quantity;
+  });
+  document.getElementById('cart-total').innerText = total.toFixed(2);
+}
+
+function removeItem(button) {
+  const item = button.parentElement;
+  item.parentElement.removeChild(item);
+  updateTotal();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  updateTotal();
+});
