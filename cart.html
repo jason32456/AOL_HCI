@@ -11,38 +11,39 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <title>Website</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="header">
         <nav class="nav">
+            <img src="image/Assets/Brand Logo.png" alt="Brand Logo">
             <h1>SoleSense</h1>
             <form>
                 <div class="search">
-                    <span class="material-symbols-outlined">search</span>
+                    <img src="image/Assets/search-icon.png">
                     <input class="input" type="search" placeholder="Search">
                 </div>
             </form>
             <ul class="nav-text">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>   
+                <li><a href="shop.html">Shop</a></li>
                 <li><a href="cart.html">Cart</a></li>
             </ul>
         </nav>
     </div>
-    
+
     <div class="container">
         <h1>Products</h1>
         <div class="product">
-            <img src="img/shoe-7.jpg" alt="Product 1">
+            <img src="image/Shoes/1s Low Black Toe.png" alt="Product 1">
             <h2>Product 1</h2>
             <p>$10.00</p>
             <button onclick="addToCart('Product 1', 10.00)">Add to Cart</button>
         </div>
         <div class="product">
-            <img src="img/shoe-7.jpg" alt="Product 2">
+            <img src="image/Shoes/AF Triple Black SPRM.png" alt="Product 2">
             <h2>Product 2</h2>
             <p>$20.00</p>
             <button onclick="addToCart('Product 2', 20.00)">Add to Cart</button>
@@ -57,44 +58,46 @@
     </div>
 
     <script src="script.js"></script>
-</body>
-<footer>
-    <div class="footer">
-        <div class="footer-section-1">
-            <h2>Quick Links</h2>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
-        </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-section-1">
+                <h2>Quick Links</h2>
 
-        <div class="footer-section-2">
-            <h2>Contact Us</h2>
-        
-             <div class="footer-section-2-container-1">
-                <img src="img/Footer-Image/telephone.png" alt="Telephone" class="telephone">
-                 <p>+62 000 1111 2222</p>
-             </div>
-
-            <div class="footer-section-2-container-2">
-                <img src="img/Footer-Image/Email.png" alt="Email" class="email">
-                <p>SoleSense@gmail.com</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
             </div>
+
+            <div class="footer-section-2">
+                <h2>Contact Us</h2>
+            
+                 <div class="footer-section-2-container-1">
+                    <img src="image/Footer Image/telephone.png" alt="Telephone" class="telephone">
+                     <p>+62 000 1111 2222</p>
+                 </div>
+
+                <div class="footer-section-2-container-2">
+                    <img src="image/Footer Image/Email.png" alt="Email" class="email">
+                    <p>SoleSense@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-section-3">
+                <h2>Socials</h2>
+
+                <img src= "image/Footer Image/Facebook.png" alt="Facebook">
+                <img src="image/Footer Image/Intagram.jpg" alt="Instagram">
+                <img src= "image/Footer Image/Twitter.png" alt="Twitter">
+                <img src="image/Footer Image/Youtube.png" alt="Youtube">
+            </div>
+
+            <p class="footer-bottom">SoleSense @ 2024 - All Rights Reserved</p>
         </div>
+    </footer>
 
-        <div class="footer-section-3">
-            <h2>Socials</h2>
+</body>
 
-            <img src="img/Footer-Image/Facebook.png" alt="Facebook">
-            <img src="img/Footer-Image/Intagram.jpg" alt="Instagram">
-            <img src="img/Footer-Image/Twitter.png" alt="Twitter">
-            <img src="img/Footer-Image/Youtube.png" alt="Youtube">
-        </div>
-
-        <p class="footer-bottom">SoleSense @ 2024 - All Rights Reserved</p>
-    </div>
-</footer>
-    
 </html>

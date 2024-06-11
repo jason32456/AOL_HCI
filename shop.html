@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoleSense</title>
+    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,59 +15,181 @@
 <body>
     <div class="header">
         <nav class="nav">
+            <img src="image/Assets/Brand Logo.png" alt="Brand Logo">
             <h1>SoleSense</h1>
             <form>
                 <div class="search">
-                    <span class="material-symbols-outlined">search</span>
+                    <img src="image/Assets/search-icon.png">
                     <input class="input" type="search" placeholder="Search">
                 </div>
             </form>
             <ul class="nav-text">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>   
+                <li><a href="shop.html">Shop</a></li>
                 <li><a href="cart.html">Cart</a></li>
             </ul>
         </nav>
     </div>
 
-</body>
-<footer>
-    <div class="footer">
-        <div class="footer-section-1">
-            <h2>Quick Links</h2>
-
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-section-2">
-            <h2>Contact Us</h2>
-        
-             <div class="footer-section-2-container-1">
-                <img src="img/Footer-Image/telephone.png" alt="Telephone" class="telephone">
-                 <p>+62 000 1111 2222</p>
-             </div>
-
-            <div class="footer-section-2-container-2">
-                <img src="img/Footer-Image/Email.png" alt="Email" class="email">
-                <p>SoleSense@gmail.com</p>
-            </div>
-        </div>
-
-        <div class="footer-section-3">
-            <h2>Socials</h2>
-
-            <img src="img/Footer-Image/Facebook.png" alt="Facebook">
-            <img src="img/Footer-Image/Intagram.jpg" alt="Instagram">
-            <img src="img/Footer-Image/Twitter.png" alt="Twitter">
-            <img src="img/Footer-Image/Youtube.png" alt="Youtube">
-        </div>
-
-        <p class="footer-bottom">SoleSense @ 2024 - All Rights Reserved</p>
+    <div class="filter">
+        <span>Sort by</span>
+        <select name="" id="select">
+            <option value="Default">Default</option>
+            <option value="LowtoHigh">Price : Low to High</option>
+            <option value="HightoLow">Price : High to Low</option>
+        </select>
     </div>
-</footer>
+
+    <div class="shop">
+            <div class="shop-container">
+
+                <img src="image/Shoes/Jordan 1 OG Taxi.png">
+    
+                <div class="shop-content">
+                    <h2>Jordan 1 OG Taxi</h2>
+                    <p>$145</p>
+                </div>
+    
+                <p class="shop-brand">Nike</p>
+            </div>
+
+            <div class="shop-container">
+
+                <img src="image/Shoes/1s Mocha x Travis.png">
+    
+                <div class="shop-content">
+                    <h2>1s Mocha x Travis</h2>
+                    <p>$1500</p>
+                </div>
+    
+                <p class="shop-brand">Nike</p>
+            </div>
+
+            <div class="shop-container">
+
+                <img src="image/Shoes/1s Low Black Toe.png">
+    
+                <div class="shop-content">
+                    <h2>1s Low Black Toe</h2>
+                    <p>$180</p>
+                </div>
+    
+                <p class="shop-brand">Nike</p>
+            </div>
+
+            <div class="shop-container">
+
+                <img src="image/Shoes/Yeezy 350 Clay.png">
+    
+                <div class="shop-content">
+                    <h2>Yeezy 350 Clay</h2>
+                    <p>$180</p>
+                </div>
+    
+                <p class="shop-brand">Adidas</p>
+            </div>
+
+            <div class="shop-container">
+
+                <img src="image/Shoes/Dunk Pandas.png">
+    
+                <div class="shop-content">
+                    <h2>Dunk Pandas</h2>
+                    <p>$150</p>
+                </div>
+    
+                <p class="shop-brand">Nike</p>
+            </div>
+
+            <div class="shop-container">
+
+                    <img src="image/Shoes/AF Triple Black SPRM.png" class="triple">
+        
+                    <div class="triple shop-content">
+                        <h2>AF Triple Black SPRM</h2>
+                        <p>$180</p>
+                    </div>
+        
+                    <p class="triple-shop-brand">Nike</p>
+            
+            </div>
+
+            <div class="shop-container">
+
+                <img src="image/Shoes/Jordan 1 Obsidian.png">
+    
+                <div class="shop-content">
+                    <h2>Jordan 1 Obsidian</h2>
+                    <p>$350</p>
+                </div>
+    
+                <p class="shop-brand">Nike</p>
+            </div>
+
+            <div class="shop-container">
+
+                <img src="image/Shoes/Air Jordan 1 Chicago.png">
+    
+                <div class="shop-content">
+                    <h2>Air Jordan 1 Chicago</h2>
+                    <p>$900</p>
+                </div>
+    
+                <p class="shop-brand">Nike</p>
+            </div>
+
+            <div class="shop-container">
+
+                <img src="image/Shoes/Jordan 3 Fire Red.png">
+    
+                <div class="shop-content">
+                    <h2>Jordan 3 Fire Red</h2>
+                    <p>$170</p>
+                </div>
+    
+                <p class="shop-brand">Nike</p>
+            </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-section-1">
+                <h2>Quick Links</h2>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section-2">
+                <h2>Contact Us</h2>
+            
+                 <div class="footer-section-2-container-1">
+                    <img src="image/Footer Image/telephone.png" alt="Telephone" class="telephone">
+                     <p>+62 000 1111 2222</p>
+                 </div>
+
+                <div class="footer-section-2-container-2">
+                    <img src="image/Footer Image/Email.png" alt="Email" class="email">
+                    <p>SoleSense@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-section-3">
+                <h2>Socials</h2>
+
+                <img src= "image/Footer Image/Facebook.png" alt="Facebook">
+                <img src="image/Footer Image/Intagram.jpg" alt="Instagram">
+                <img src= "image/Footer Image/Twitter.png" alt="Twitter">
+                <img src="image/Footer Image/Youtube.png" alt="Youtube">
+            </div>
+
+            <p class="footer-bottom">SoleSense @ 2024 - All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
 
 </html>

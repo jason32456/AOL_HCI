@@ -1,43 +1,37 @@
 * {
   padding: 0;
   margin: 0;
-  /* font-family: Arial, sans-serif; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* height: 100vh; */
-  box-sizing: border-box;
-}
-
-h2 {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 40px;
-  font-size: 200%;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  font-family: "Inter", sans-serif;
 }
 
 .nav {
   display: flex;
-  padding: 10px 10%;
+  padding: 0px 10%;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(214,207,199)
+  background-color: rgb(214, 207, 199);
 }
 
-.nav-text {
-  display: inline-flex;
+.nav img {
+  width: 80px;
+  height: 80px;
+}
+
+.nav h1 {
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.nav ul {
+  display: flex;
 }
 
 .nav ul li {
   justify-content: right;
   padding: 10px;
   list-style-type: none;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .nav ul li a {
@@ -45,6 +39,7 @@ body {
   color: #00203fff;
   margin: 10px;
   position: relative;
+  padding: 0px 10px;
 }
 
 .nav ul li a::after {
@@ -54,7 +49,7 @@ body {
   background: black;
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -5px;
   transition: 0.5s;
 }
 
@@ -73,13 +68,17 @@ nav ul li a:hover::after {
   transition: box-shadow 0.25s;
 }
 
+.search img {
+  width: 20px;
+  height: auto;
+}
+
 .search:focus-within {
-  box-shadow: 0 0 2px rgba(0,0,0,0.75);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
 }
 
 .input {
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #333333;
   margin-left: var(--padding);
@@ -90,71 +89,171 @@ nav ul li a:hover::after {
 }
 
 .input::placeholder {
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .paragraph {
   position: relative;
 }
 
-.button {
+.button-hero {
   padding: 10px 20px;
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
-#hero {
-  height: 90vh;
-  width: 100%;
-  height: 130vh;
-  background: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0c675ac2-d6f2-400e-84ba-1a18003608ac/air-jordan-1-mid-se-shoes-XkFP30.png);
-  background-size: cover;
-  background-position: calc(100% + 200px) center; /* This will shift the background image 200px from the right */
-  padding: 0 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+.featured {
+  position: relative;
+  top: 400px;
+  left: 420px;
 }
 
-.content-box {
-  background: rgba(255, 255, 255, 0.55); 
-  padding: 20px 40px;
-  border-radius: 10px;
+.trending-sneakers {
+  position: relative;
+  bottom: 900px;
+}
+
+.trending-sneakers-title,
+.testimony-title {
+  font-weight: 500;
+  font-size: 45px;
   text-align: center;
 }
 
-#hero .button {
-  align-items: center;
-  border-radius: 10px;
+.shop,
+.outer-container {
+  width: 80%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 31px;
 }
 
-.button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-family: "Poppins", sans-serif;
+.shop-container,
+.trending-sneakers-container {
+  background-color: white;
+  width: 386px;
+  height: 306px;
+  /* border: 5px solid green; */
+  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+}
+
+.shop-container img,
+.trending-sneakers-container img {
+  width: 380px;
+  height: auto;
+  max-height: 200px;
+  border-bottom: 1px solid black;
+  object-fit: contain;
+}
+
+.triple,
+.triple-shop-brand {
+  position: relative;
+  top: 27px;
+}
+
+.triple-shop-brand {
+  position: relative;
+  top: 40px;
+  font-size: 17px;
+  font-weight: 200;
+  text-align: left;
+  margin-left: 5px;
+
+}
+
+.shop-content,
+.trending-sneakers-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.shop-content h2,
+.trending-sneakers-content h2 {
+  font-size: 25px;
   font-weight: 500;
-  font-style: normal;
-  background-color: #000; 
-  color: #fff; 
-  border: 2px solid #000; 
-  transition: background-color 0.3s, color 0.3s; 
 }
 
-.button:hover {
-  background-color: #fff; 
-  color: #000; 
+.shop-content p,
+.trending-sneakers-content p {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.shop-brand,
+.trending-sneakers-brand {
+  position: relative;
+  top: 15px;
+  font-size: 17px;
+  font-weight: 200;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.hero {
+  display: flex;
+  margin: 150px auto;
+  overflow-x: hidden;
+}
+
+.hero-text {
+  position: absolute;
+  left: 150px;
+  bottom: 240px;
+  z-index: 1;
+}
+
+.hero img {
+  position: relative;
+  bottom: 550px;
+  left: 500px;
+  z-index: 0;
+}
+
+.hero-text h2 {
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.hero-text button {
+  outline: black;
+  font-size: 27px;
+  font-weight: 500;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.hero-text a {
+  text-decoration: none;
+  color: black;
 }
 
 #services {
   text-align: center;
   padding: 50px 0;
+  position: relative;
+  bottom: 1000px;
 }
 
 #services h2 {
-  font-size: 2em;
-  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 45px;
+  margin-bottom: 80px;
 }
 
 .services-container {
@@ -195,28 +294,14 @@ nav ul li a:hover::after {
   transform: rotate(-45deg);
 }
 
-#gap {
-  height: 100px;
-}
-
-/* Google Fonts - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-.testimony{
+.testimony {
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
 }
-.slide-container{
+.slide-container {
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
@@ -224,14 +309,15 @@ nav ul li a:hover::after {
   /* height: 100vh; */
 }
 
-.slide-content{
+.slide-content {
   margin: 0 40px;
-  overflow: hidden;
   border-radius: 25px;
   overflow: visible;
 }
+
 .card-wrapper {
   display: flex;
+  padding: 60px;
 }
 
 .card {
@@ -242,8 +328,8 @@ nav ul li a:hover::after {
   text-align: center;
   width: 300px;
   margin: 15px;
-  padding-top: 50px; 
-  position: relative; 
+  padding-top: 50px;
+  position: relative;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -252,14 +338,15 @@ nav ul li a:hover::after {
 }
 
 .image-content {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .card-image {
@@ -280,20 +367,24 @@ nav ul li a:hover::after {
   padding: 20px;
 }
 
-.name{
+.name {
   font-size: 18px;
   font-weight: 500;
   color: #333;
+  margin-bottom: 30px;
 }
-.description{
+
+.description {
   font-size: 14px;
   color: #707070;
   text-align: center;
+  margin-bottom: 10px;
 }
-.button{
+
+.button {
   border: none;
   font-size: 16px;
-  color: #FFF;
+  color: #fff;
   padding: 8px 16px;
   background-color: grey;
   border-radius: 6px;
@@ -301,205 +392,54 @@ nav ul li a:hover::after {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button:hover{
+
+.button:hover {
   background: black;
-  color: #FFF;
+  color: #fff;
 }
 
-.swiper-navBtn{
+.swiper-navBtn {
   color: black;
   transition: color 0.3s ease;
 }
-.swiper-navBtn:hover{
+.swiper-navBtn:hover {
   color: grey;
 }
 .swiper-navBtn::before,
-.swiper-navBtn::after{
+.swiper-navBtn::after {
   font-size: 35px;
 }
-.swiper-button-next{
+.swiper-button-next {
   right: 0;
 }
-.swiper-button-prev{
+.swiper-button-prev {
   left: 0;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: grey;
   opacity: 1;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: black;
 }
 
 @media screen and (max-width: 768px) {
-  .slide-content{
+  .slide-content {
     margin: 0 10px;
   }
-  .swiper-navBtn{
+
+  .swiper-navBtn {
     display: none;
   }
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* .product {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.product img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
-}
-
-.product h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.product p {
-  font-size: 1.2em;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.product button {
-  padding: 10px 20px;
-  font-size: 1em;
-  border: none;
-  border-radius: 5px;
-  background-color: #000;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.product button:hover {
-  background-color: #444;
-}
-
-.cart {
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.cart h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.cart-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 0;
-}
-
-.cart-item span {
-  font-size: 1.1em;
-}
-
-.cart h3 {
-  font-size: 1.2em;
-  margin-top: 20px;
-} */
-
-.cart {
-  border: 1px solid #ddd;
-  padding: 16px;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.cart h2 {
-  text-align: center;
-  color: #333;
-}
-
-.cart-items {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.cart-items li {
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
-}
-
-.cart-total {
-  text-align: right;
-  margin-top: 20px;
-  font-weight: bold;
-  color: #333;
-}
-
-button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #555;
-}
-
-.search img {
-  width: 20px;
-  height: auto;
-}
-
-.search:focus-within {
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
-}
-
-.input {
-  font-size: 16px;
-  font-weight: 500;
-  color: #333333;
-  margin-left: var(--padding);
-  outline: none;
-  border: none;
-  background: transparent;
-  width: 500px;
-}
-
-.input::placeholder {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.paragraph {
+.testimony-section {
   position: relative;
-}
-
-.button {
-  padding: 10px 20px;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.featured {
-  position: relative;
-  top: 400px;
-  left: 420px;
+  bottom: 900px;
 }
 
 .footer {
   position: relative;
-  bottom: 0;
   width: 100%;
   height: 268px;
   background-color: black;
@@ -574,4 +514,28 @@ button:hover {
     flex-direction: column;
     gap: 20px;
   }
+
+  .hero {
+    flex-direction: column;
+  }
+}
+
+.filter {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: 50px;
+  left: 135px;
+}
+
+.filter select{
+  width: 160px;
+  padding: 0 0 0 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: black;
+  background: transparent;
+  cursor: pointer;
 }
