@@ -633,10 +633,11 @@ nav ul li a:hover::after {
 }
 .accepted-payments h2 {
   margin-bottom: 30px;
+  font-size: 2em;
 }
 .accepted-payments img {
-  width: 100px;
-  height: auto;
+  height: 69px;
+  width: auto;
   margin-right: 20px;
 }
 .accepted-payments img:last-child {
